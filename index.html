@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel Website</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <i class="fas fa-plane"></i>
+        <p>Explorer</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="titles">
+      <h1>Explore The World</h1>
+      <p>
+        The world is a book and those who do not travel read only one page !
+      </p>
+    </section>
+
+    <section class="container-boxes">
+      <div class="box">
+        <div class="icon">
+          <a href=""><i class="fas fa-book"></i></a>
+        </div>
+        <div class="text">
+          <a href="">
+            <h3>Book Now</h3>
+            <p>Book Now And Fly Around The World .</p>
+          </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <a href=""><i class="fas fa-plane"></i></a>
+        </div>
+        <div class="text">
+          <a href="https://www.google.co.in/maps/@12.9715987,77.5945627,10z">
+            <h3>Travel</h3>
+            <p>Travel With Us And Explore The World.</p>
+          </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <a href=""><i class="fas fa-address-card"></i></a>
+        </div>
+        <div class="text">
+          <a href="">
+            <h3>Teams</h3>
+            <p>Become a member for Offers and Updates.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div style="text-align:center"> 
+    <button onclick="playPause()">Play/Pause</button> 
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br> 
+    <video id="video1" width="420" height="340" controls>
+        <source src="Pexels.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+<script> 
+    var myVideo = document.getElementById("video1"); 
+    
+    function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+    } 
+    
+    function makeBig() { 
+        myVideo.width = 560; 
+    } 
+    
+    function makeSmall() { 
+        myVideo.width = 320; 
+    } 
+    
+    function makeNormal() { 
+        myVideo.width = 420; 
+    } 
+</script>
+
+</div>
+  </body>
+</html>
